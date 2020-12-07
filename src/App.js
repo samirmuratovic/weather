@@ -5,7 +5,7 @@ function App() {
     <>
       <form className="flex justify-center w-full pt-20 bg-blueGray-50">
         <input
-          className="w-3/4 h-14 rounded-lg bg-trueGray-100 placeholder-trueGray-500 text-trueGray-500 px-5 focus:bg-white focus:ring-2 focus:ring-blue-100"
+          className="w-3/4 h-14 transition duration-200 ease-in-out rounded-lg bg-trueGray-100 placeholder-trueGray-500 text-trueGray-500 px-5 border-0 hover:bg-white focus:bg-white focus:ring focus:ring-blue-100"
           placeholder="Search city..."
           autoComplete="off"
           type="text"
