@@ -1,11 +1,61 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+const geocodeURL =
+  'https://api.mapbox.com/geocoding/v5/mapbox.places/' +
+  encodeURIComponent('Orlando') +
+  '.json?access_token=pk.eyJ1Ijoic2FtaXJtdXJhdG92aWMiLCJhIjoiY2s5Mzd4NzMyMDB3NzNybXA3ZDY5NzdlbCJ9.LpHj-Rh9VZXksrcyPBSsXA&limit=1'
+
+// const forecastURL =
+//   'http://api.weatherstack.com/current?access_key=5836e2c01908a5bc8ce1b2c9b026a14b&query=' +
+//   latitude +
+//   ',' +
+//   longitude +
+//   '&units=f'
+
+// latitude: body.features[0].center[1],
+//         longitude: body.features[0].center[0],
+
+const getData = async () => {
+  const response = await fetch(geocodeURL)
+  const data = await response.json()
+
+  const latitude = data.features[0].center[1]
+  const longitude = data.features[0].center[0]
+  const location = data.features[0].place_name
+
+  const weatherResponse = await fetch(
+    'http://api.weatherstack.com/current?access_key=5836e2c01908a5bc8ce1b2c9b026a14b&query=' +
+      latitude +
+      ',' +
+      longitude +
+      '&units=f'
+  )
+
+  const weatherData = await weatherResponse.json()
+  const weatherObj = {
+    ...weatherData,
+    location,
+  }
+  // console.log(weatherData)
+  return weatherObj
+}
 
 function App() {
+  const [weather, setWeather] = useState(() => {})
+
+  useEffect(() => {
+    const getWeatherData = async () => {
+      const { current, location } = await getData()
+      setWeather({ current, location })
+    }
+    getWeatherData()
+  }, [])
+
   return (
-    <>
+    <article className="h-screen w-screen overflow-hidden">
       <form className="flex justify-center w-full pt-20 bg-blueGray-50">
         <input
-          className="w-3/4 h-14 transition duration-200 ease-in-out rounded-lg bg-trueGray-100 placeholder-trueGray-500 text-trueGray-500 px-5 border-0 hover:bg-white focus:bg-white focus:ring focus:ring-blue-100"
+          className="w-3/4 md:max-w-xl h-14 transition duration-200 ease-in-out rounded-lg bg-trueGray-100 placeholder-trueGray-500 text-trueGray-500 px-5 border-0 hover:bg-white focus:bg-white focus:ring focus:ring-blue-100"
           placeholder="Search city..."
           autoComplete="off"
           type="text"
@@ -15,10 +65,10 @@ function App() {
       </form>
       <div className="mx-auto flex flex-col bg-blueGray-50 w-96 h-screen px-10 py-20">
         <h2 className="text-center text-4xl text-blueGray-600">
-          San Francisco
+          {weather.location.split(',')[0]}
         </h2>
         <span className="mt-6 text-center text-trueGray-400">
-          Sunny with clear skies
+          {weather.current.weather_descriptions[0]}
         </span>
         <svg className="mt-5 mx-auto w-44 h-44">
           <g filter="url(#filter0_d)">
@@ -138,9 +188,13 @@ function App() {
                 />
               </g>
             </svg>
-            <span className="mt-3 text-blueGray-400">34 %</span>
+            <span className="mt-3 text-blueGray-400">
+              {weather.current.precip} %
+            </span>
           </div>
-          <h1 className="ml-10 text-6xl text-blueGray-600">22°</h1>
+          <h1 className="ml-10 text-6xl text-blueGray-600">
+            {weather.current.temperature}°
+          </h1>
           <div className="flex flex-col items-center">
             <svg className="w-7 h-5">
               <g transform="translate(0 -48)">
@@ -173,41 +227,57 @@ function App() {
                 </g>
               </g>
             </svg>
-            <span className="mt-3 text-blueGray-400">27 mi/h</span>
+            <span className="mt-3 text-blueGray-400">
+              {weather.current.wind_speed} mi / h
+            </span>
           </div>
         </div>
         <div className="mt-16 flex justify-between">
           <div className="flex flex-col items-center">
-            <div className="pill flex items-center justify-center w-24 h-8 bg-blue-50 rounded-full">
-              <span className="text-xs font-semibold text-blue-300">Low</span>
+            <div className="pill flex items-center justify-center w-20 h-6 bg-blue-50 rounded-full">
+              <span className="text-xs font-semibold text-blue-300">
+                {weather.current.humidity < 30
+                  ? 'Low'
+                  : weather.current.humidity < 60
+                  ? 'Moderate'
+                  : 'High'}
+              </span>
             </div>
-            <span className="mt-2 text-xs font-medium text-blueGray-500">
+            <span className="mt-4 text-xs font-semibold text-blueGray-500">
               Humidity
             </span>
           </div>
           <div className="flex flex-col items-center">
-            <div className="pill flex items-center justify-center w-24 h-8 bg-trueGray-100 rounded-full">
+            <div className="pill flex items-center justify-center w-20 h-6 bg-trueGray-100 rounded-full">
               <span className="text-xs font-semibold text-trueGray-400">
-                Moderate
+                {weather.current.uv_index < 4
+                  ? 'Low'
+                  : weather.current.uv_index < 8
+                  ? 'Moderate'
+                  : 'High'}
               </span>
             </div>
-            <span className="mt-2 text-xs font-medium text-blueGray-500">
+            <span className="mt-4 text-xs font-semibold text-blueGray-500">
               UV
             </span>
           </div>
           <div className="flex flex-col items-center">
-            <div className="pill flex items-center justify-center w-24 h-8 bg-yellow-100 rounded-full">
+            <div className="pill flex items-center justify-center w-20 h-6 bg-yellow-100 rounded-full">
               <span className="text-xs font-semibold text-yellow-400">
-                High
+                {weather.current.cloudcover > 70
+                  ? 'Low'
+                  : weather.current.cloudcover > 40
+                  ? 'Moderate'
+                  : 'High'}
               </span>
             </div>
-            <span className="mt-2 text-xs font-medium text-blueGray-500">
+            <span className="mt-4 text-xs font-semibold text-blueGray-500">
               Pollen
             </span>
           </div>
         </div>
       </div>
-    </>
+    </article>
   )
 }
 
