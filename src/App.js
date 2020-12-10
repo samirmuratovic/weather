@@ -11,7 +11,6 @@ function App() {
   useEffect(() => {
     async function fetchForecast() {
       const { current, location } = await getForecast('San Francisco')
-      console.log(current, location)
       setForecast({ current, location })
       setFetchStatus('resolved')
     }
@@ -37,7 +36,7 @@ function App() {
   }
 
   return (
-    <article className="h-screen w-screen overflow-hidden">
+    <article className="max-h-screen w-screen overflow-hidden">
       {fetchStatus === 'rejected' ? (
         <div className="absolute w-full text-center mx-auto mt-6 rounded-lg text-red-400 text-sm  p-2">
           Please enter a valid city
