@@ -20,9 +20,9 @@ const sun = (
         width="180"
         height="180"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -53,9 +53,9 @@ const sun = (
         width="120"
         height="120"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -88,8 +88,8 @@ const sun = (
         y2="36"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F7B51C" />
-        <stop offset="1" stop-color="#FBF039" />
+        <stop stopColor="#F7B51C" />
+        <stop offset="1" stopColor="#FBF039" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -99,8 +99,8 @@ const sun = (
         y2="36"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F7B51C" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#F7B51C" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
     </defs>
   </svg>
@@ -116,24 +116,24 @@ const cloud = (
   >
     <g filter="url(#filter0_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="#AED8F3"
       />
     </g>
     <g filter="url(#filter1_i)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="white"
       />
     </g>
     <g filter="url(#filter2_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M158.735 114.392C158.735 116.568 158.533 118.697 158.147 120.762C175.478 122.533 189 137.174 189 154.974C189 172.807 175.427 187.47 158.048 189.195V189.365H154.608H93.3915H89.9524V189.195C72.5732 187.47 59 172.807 59 154.974C59 136.943 72.8747 122.154 90.5296 120.699C90.1505 118.655 89.9524 116.546 89.9524 114.392C89.9524 95.3976 105.35 80 124.344 80C143.338 80 158.735 95.3976 158.735 114.392Z"
         fill="#AED8F3"
       />
@@ -152,9 +152,9 @@ const cloud = (
         width="249"
         height="219"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -170,9 +170,9 @@ const cloud = (
         width="189"
         height="174"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -201,9 +201,9 @@ const cloud = (
         width="190"
         height="169.365"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -219,9 +219,9 @@ const cloud = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -237,9 +237,9 @@ const cloud = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -262,24 +262,24 @@ const greyCloud = (
   >
     <g filter="url(#filter0_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="#B9C9D3"
       />
     </g>
     <g filter="url(#filter1_i)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="white"
       />
     </g>
     <g filter="url(#filter2_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M158.735 114.392C158.735 116.568 158.533 118.697 158.147 120.762C175.478 122.533 189 137.174 189 154.974C189 172.807 175.427 187.47 158.048 189.195V189.365H154.608H93.3915H89.9524V189.195C72.5732 187.47 59 172.807 59 154.974C59 136.943 72.8747 122.154 90.5296 120.699C90.1505 118.655 89.9524 116.546 89.9524 114.392C89.9524 95.3976 105.35 80 124.344 80C143.338 80 158.735 95.3976 158.735 114.392Z"
         fill="#B9C9D3"
       />
@@ -298,9 +298,9 @@ const greyCloud = (
         width="249"
         height="219"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -316,9 +316,9 @@ const greyCloud = (
         width="189"
         height="174"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -347,9 +347,9 @@ const greyCloud = (
         width="190"
         height="169.365"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -365,9 +365,9 @@ const greyCloud = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -383,9 +383,9 @@ const greyCloud = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -414,24 +414,24 @@ const cloudAndSun = (
     </g>
     <g filter="url(#filter2_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M194 98C194 101.164 193.706 104.26 193.144 107.261C218.342 109.837 238 131.123 238 157C238 182.927 218.267 204.245 193 206.753V207H188H99H94V206.753C68.7334 204.245 49 182.927 49 157C49 130.787 69.1717 109.285 94.8392 107.171C94.2881 104.198 94 101.133 94 98C94 70.3858 116.386 48 144 48C171.614 48 194 70.3858 194 98Z"
         fill="#AED8F3"
       />
     </g>
     <g filter="url(#filter3_i)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M194 98C194 101.164 193.706 104.26 193.144 107.261C218.342 109.837 238 131.123 238 157C238 182.927 218.267 204.245 193 206.753V207H188H99H94V206.753C68.7334 204.245 49 182.927 49 157C49 130.787 69.1717 109.285 94.8392 107.171C94.2881 104.198 94 101.133 94 98C94 70.3858 116.386 48 144 48C171.614 48 194 70.3858 194 98Z"
         fill="white"
       />
     </g>
     <g filter="url(#filter4_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M177.735 132.392C177.735 134.568 177.533 136.697 177.147 138.762C194.478 140.533 208 155.174 208 172.974C208 190.807 194.427 205.47 177.048 207.195V207.365H173.608H112.392H108.952V207.195C91.5732 205.47 78 190.807 78 172.974C78 154.943 91.8747 140.154 109.53 138.699C109.151 136.655 108.952 134.546 108.952 132.392C108.952 113.398 124.35 98 143.344 98C162.338 98 177.735 113.398 177.735 132.392Z"
         fill="#AED8F3"
       />
@@ -454,9 +454,9 @@ const cloudAndSun = (
         width="180"
         height="180"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -487,9 +487,9 @@ const cloudAndSun = (
         width="120"
         height="120"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -521,9 +521,9 @@ const cloudAndSun = (
         width="249"
         height="219"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -539,9 +539,9 @@ const cloudAndSun = (
         width="189"
         height="174"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -570,9 +570,9 @@ const cloudAndSun = (
         width="190"
         height="169.365"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -588,9 +588,9 @@ const cloudAndSun = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -606,9 +606,9 @@ const cloudAndSun = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -625,8 +625,8 @@ const cloudAndSun = (
         y2="36"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F7B51C" />
-        <stop offset="1" stop-color="#FBF039" />
+        <stop stopColor="#F7B51C" />
+        <stop offset="1" stopColor="#FBF039" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -636,8 +636,8 @@ const cloudAndSun = (
         y2="36"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F7B51C" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#F7B51C" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
     </defs>
   </svg>
@@ -653,24 +653,24 @@ const storm = (
   >
     <g filter="url(#filter0_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="#B9C9D3"
       />
     </g>
     <g filter="url(#filter1_i)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="white"
       />
     </g>
     <g filter="url(#filter2_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M158.735 114.392C158.735 116.568 158.533 118.697 158.147 120.762C175.478 122.533 189 137.174 189 154.974C189 172.807 175.427 187.47 158.048 189.195V189.365H154.608H93.3915H89.9524V189.195C72.5732 187.47 59 172.807 59 154.974C59 136.943 72.8747 122.154 90.5296 120.699C90.1505 118.655 89.9524 116.546 89.9524 114.392C89.9524 95.3976 105.35 80 124.344 80C143.338 80 158.735 95.3976 158.735 114.392Z"
         fill="#B9C9D3"
       />
@@ -701,9 +701,9 @@ const storm = (
         width="249"
         height="219"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -719,9 +719,9 @@ const storm = (
         width="189"
         height="174"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -750,9 +750,9 @@ const storm = (
         width="190"
         height="169.365"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -768,9 +768,9 @@ const storm = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -786,9 +786,9 @@ const storm = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -804,9 +804,9 @@ const storm = (
         width="144"
         height="188"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -837,9 +837,9 @@ const storm = (
         width="84"
         height="128"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -872,8 +872,8 @@ const storm = (
         y2="236.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FBF039" />
-        <stop offset="1" stop-color="#F7B51C" />
+        <stop stopColor="#FBF039" />
+        <stop offset="1" stopColor="#F7B51C" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -883,8 +883,8 @@ const storm = (
         y2="236"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#F7B51C" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#F7B51C" />
       </linearGradient>
     </defs>
   </svg>
@@ -900,24 +900,24 @@ const rain = (
   >
     <g filter="url(#filter0_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 73C175 76.1644 174.706 79.2601 174.144 82.2614C199.342 84.8365 219 106.123 219 132C219 157.927 199.267 179.245 174 181.753V182H169H80H75V181.753C49.7334 179.245 30 157.927 30 132C30 105.787 50.1717 84.2852 75.8392 82.1707C75.2881 79.1978 75 76.1325 75 73C75 45.3858 97.3858 23 125 23C152.614 23 175 45.3858 175 73Z"
         fill="#B9C9D3"
       />
     </g>
     <g filter="url(#filter1_i)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 73C175 76.1644 174.706 79.2601 174.144 82.2614C199.342 84.8365 219 106.123 219 132C219 157.927 199.267 179.245 174 181.753V182H169H80H75V181.753C49.7334 179.245 30 157.927 30 132C30 105.787 50.1717 84.2852 75.8392 82.1707C75.2881 79.1978 75 76.1325 75 73C75 45.3858 97.3858 23 125 23C152.614 23 175 45.3858 175 73Z"
         fill="white"
       />
     </g>
     <g filter="url(#filter2_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M158.735 107.392C158.735 109.568 158.533 111.697 158.147 113.762C175.478 115.533 189 130.174 189 147.974C189 165.807 175.427 180.47 158.048 182.195V182.365H154.608H93.3915H89.9524V182.195C72.5732 180.47 59 165.807 59 147.974C59 129.943 72.8747 115.154 90.5296 113.699C90.1505 111.655 89.9524 109.546 89.9524 107.392C89.9524 88.3976 105.35 73 124.344 73C143.338 73 158.735 88.3976 158.735 107.392Z"
         fill="#B9C9D3"
       />
@@ -1036,9 +1036,9 @@ const rain = (
         width="249"
         height="219"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1054,9 +1054,9 @@ const rain = (
         width="189"
         height="174"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1085,9 +1085,9 @@ const rain = (
         width="190"
         height="169.365"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1103,9 +1103,9 @@ const rain = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1121,9 +1121,9 @@ const rain = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1139,9 +1139,9 @@ const rain = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1172,9 +1172,9 @@ const rain = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1206,9 +1206,9 @@ const rain = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1239,9 +1239,9 @@ const rain = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1273,9 +1273,9 @@ const rain = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1306,9 +1306,9 @@ const rain = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1340,9 +1340,9 @@ const rain = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1373,9 +1373,9 @@ const rain = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1407,9 +1407,9 @@ const rain = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1440,9 +1440,9 @@ const rain = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1475,8 +1475,8 @@ const rain = (
         y2="231"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -1486,8 +1486,8 @@ const rain = (
         y2="231"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.619792" stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop offset="0.619792" stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -1497,8 +1497,8 @@ const rain = (
         y2="220"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -1508,8 +1508,8 @@ const rain = (
         y2="220"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.682292" stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop offset="0.682292" stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -1519,8 +1519,8 @@ const rain = (
         y2="238"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -1530,8 +1530,8 @@ const rain = (
         y2="238"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.572917" stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop offset="0.572917" stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -1541,8 +1541,8 @@ const rain = (
         y2="252"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint7_linear"
@@ -1552,8 +1552,8 @@ const rain = (
         y2="252"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.671875" stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop offset="0.671875" stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
       <linearGradient
         id="paint8_linear"
@@ -1563,8 +1563,8 @@ const rain = (
         y2="220"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint9_linear"
@@ -1574,8 +1574,8 @@ const rain = (
         y2="220"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.666667" stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop offset="0.666667" stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
     </defs>
   </svg>
@@ -1591,24 +1591,24 @@ const rainAndStorm = (
   >
     <g filter="url(#filter0_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="#B9C9D3"
       />
     </g>
     <g filter="url(#filter1_i)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="white"
       />
     </g>
     <g filter="url(#filter2_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M158.735 114.392C158.735 116.568 158.533 118.697 158.147 120.762C175.478 122.533 189 137.174 189 154.974C189 172.807 175.427 187.47 158.048 189.195V189.365H154.608H93.3915H89.9524V189.195C72.5732 187.47 59 172.807 59 154.974C59 136.943 72.8747 122.154 90.5296 120.699C90.1505 118.655 89.9524 116.546 89.9524 114.392C89.9524 95.3976 105.35 80 124.344 80C143.338 80 158.735 95.3976 158.735 114.392Z"
         fill="#B9C9D3"
       />
@@ -1719,9 +1719,9 @@ const rainAndStorm = (
         width="249"
         height="219"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1737,9 +1737,9 @@ const rainAndStorm = (
         width="189"
         height="174"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1768,9 +1768,9 @@ const rainAndStorm = (
         width="190"
         height="169.365"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1786,9 +1786,9 @@ const rainAndStorm = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1804,9 +1804,9 @@ const rainAndStorm = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1822,9 +1822,9 @@ const rainAndStorm = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1855,9 +1855,9 @@ const rainAndStorm = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1889,9 +1889,9 @@ const rainAndStorm = (
         width="144"
         height="188"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1922,9 +1922,9 @@ const rainAndStorm = (
         width="84"
         height="128"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1956,9 +1956,9 @@ const rainAndStorm = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -1989,9 +1989,9 @@ const rainAndStorm = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2023,9 +2023,9 @@ const rainAndStorm = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2056,9 +2056,9 @@ const rainAndStorm = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2090,9 +2090,9 @@ const rainAndStorm = (
         width="89"
         height="109"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2123,9 +2123,9 @@ const rainAndStorm = (
         width="19"
         height="42"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2158,8 +2158,8 @@ const rainAndStorm = (
         y2="220"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -2169,8 +2169,8 @@ const rainAndStorm = (
         y2="220"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -2180,8 +2180,8 @@ const rainAndStorm = (
         y2="236.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FBF039" />
-        <stop offset="1" stop-color="#F7B51C" />
+        <stop stopColor="#FBF039" />
+        <stop offset="1" stopColor="#F7B51C" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -2191,8 +2191,8 @@ const rainAndStorm = (
         y2="236"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#F7B51C" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#F7B51C" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -2202,8 +2202,8 @@ const rainAndStorm = (
         y2="224"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -2213,8 +2213,8 @@ const rainAndStorm = (
         y2="224"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.411458" stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop offset="0.411458" stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -2224,8 +2224,8 @@ const rainAndStorm = (
         y2="226"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint7_linear"
@@ -2235,8 +2235,8 @@ const rainAndStorm = (
         y2="226"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.416667" stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop offset="0.416667" stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
       <linearGradient
         id="paint8_linear"
@@ -2246,8 +2246,8 @@ const rainAndStorm = (
         y2="255"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" />
       </linearGradient>
       <linearGradient
         id="paint9_linear"
@@ -2257,8 +2257,8 @@ const rainAndStorm = (
         y2="255"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.583333" stop-color="white" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.46" />
+        <stop offset="0.583333" stopColor="white" />
+        <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.46" />
       </linearGradient>
     </defs>
   </svg>
@@ -2274,24 +2274,24 @@ const snow = (
   >
     <g filter="url(#filter0_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="#B9C9D3"
       />
     </g>
     <g filter="url(#filter1_i)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M175 80C175 83.1644 174.706 86.2601 174.144 89.2614C199.342 91.8365 219 113.123 219 139C219 164.927 199.267 186.245 174 188.753V189H169H80H75V188.753C49.7334 186.245 30 164.927 30 139C30 112.787 50.1717 91.2852 75.8392 89.1707C75.2881 86.1978 75 83.1325 75 80C75 52.3858 97.3858 30 125 30C152.614 30 175 52.3858 175 80Z"
         fill="white"
       />
     </g>
     <g filter="url(#filter2_f)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M158.735 114.392C158.735 116.568 158.533 118.697 158.147 120.762C175.478 122.533 189 137.174 189 154.974C189 172.807 175.427 187.47 158.048 189.195V189.365H154.608H93.3915H89.9524V189.195C72.5732 187.47 59 172.807 59 154.974C59 136.943 72.8747 122.154 90.5296 120.699C90.1505 118.655 89.9524 116.546 89.9524 114.392C89.9524 95.3976 105.35 80 124.344 80C143.338 80 158.735 95.3976 158.735 114.392Z"
         fill="#B9C9D3"
       />
@@ -2366,9 +2366,9 @@ const snow = (
         width="249"
         height="219"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -2384,9 +2384,9 @@ const snow = (
         width="189"
         height="174"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -2415,9 +2415,9 @@ const snow = (
         width="190"
         height="169.365"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -2433,9 +2433,9 @@ const snow = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -2451,9 +2451,9 @@ const snow = (
         width="100"
         height="100"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -2469,9 +2469,9 @@ const snow = (
         width="31"
         height="31"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2502,9 +2502,9 @@ const snow = (
         width="25"
         height="28"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2536,9 +2536,9 @@ const snow = (
         width="31"
         height="31"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2569,9 +2569,9 @@ const snow = (
         width="25"
         height="28"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2603,9 +2603,9 @@ const snow = (
         width="31"
         height="31"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2636,9 +2636,9 @@ const snow = (
         width="25"
         height="28"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2670,9 +2670,9 @@ const snow = (
         width="31"
         height="31"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2703,9 +2703,9 @@ const snow = (
         width="25"
         height="28"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2737,9 +2737,9 @@ const snow = (
         width="31"
         height="31"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2770,9 +2770,9 @@ const snow = (
         width="25"
         height="28"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2804,9 +2804,9 @@ const snow = (
         width="31"
         height="31"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2837,9 +2837,9 @@ const snow = (
         width="25"
         height="28"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2871,9 +2871,9 @@ const snow = (
         width="31"
         height="31"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2904,9 +2904,9 @@ const snow = (
         width="25"
         height="28"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -2939,8 +2939,8 @@ const snow = (
         y2="217"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -2950,8 +2950,8 @@ const snow = (
         y2="217"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" stop-opacity="0.52" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" stopOpacity="0.52" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -2961,8 +2961,8 @@ const snow = (
         y2="237"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -2972,8 +2972,8 @@ const snow = (
         y2="237"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" stop-opacity="0.52" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" stopOpacity="0.52" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -2983,8 +2983,8 @@ const snow = (
         y2="217"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -2994,8 +2994,8 @@ const snow = (
         y2="217"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" stop-opacity="0.52" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" stopOpacity="0.52" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -3005,8 +3005,8 @@ const snow = (
         y2="262"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" />
       </linearGradient>
       <linearGradient
         id="paint7_linear"
@@ -3016,8 +3016,8 @@ const snow = (
         y2="262"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" stop-opacity="0.52" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" stopOpacity="0.52" />
       </linearGradient>
       <linearGradient
         id="paint8_linear"
@@ -3027,8 +3027,8 @@ const snow = (
         y2="245"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" />
       </linearGradient>
       <linearGradient
         id="paint9_linear"
@@ -3038,8 +3038,8 @@ const snow = (
         y2="245"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" stop-opacity="0.52" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" stopOpacity="0.52" />
       </linearGradient>
       <linearGradient
         id="paint10_linear"
@@ -3049,8 +3049,8 @@ const snow = (
         y2="269"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" />
       </linearGradient>
       <linearGradient
         id="paint11_linear"
@@ -3060,8 +3060,8 @@ const snow = (
         y2="269"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" stop-opacity="0.52" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" stopOpacity="0.52" />
       </linearGradient>
       <linearGradient
         id="paint12_linear"
@@ -3071,8 +3071,8 @@ const snow = (
         y2="229"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" />
       </linearGradient>
       <linearGradient
         id="paint13_linear"
@@ -3082,8 +3082,8 @@ const snow = (
         y2="229"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.135417" stop-color="white" />
-        <stop offset="1" stop-color="#BACAD4" stop-opacity="0.52" />
+        <stop offset="0.135417" stopColor="white" />
+        <stop offset="1" stopColor="#BACAD4" stopOpacity="0.52" />
       </linearGradient>
     </defs>
   </svg>
