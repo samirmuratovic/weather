@@ -1,5 +1,6 @@
 const getForecast = async (city) => {
   let status = 'pending'
+  let forecast = {}
 
   const geocodeURL = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
     city
@@ -20,16 +21,19 @@ const getForecast = async (city) => {
     data = await res.json()
     status = 'resolved'
 
-    const forecast = {
+    forecast = {
       ...data,
       location,
       status,
     }
-    return forecast
   } catch (e) {
     status = 'rejected'
-    return status
+    forecast = {
+      status,
+    }
   }
+
+  return forecast
 }
 
 export default getForecast
