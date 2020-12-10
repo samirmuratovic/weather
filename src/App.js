@@ -36,7 +36,7 @@ function App() {
   }
 
   return (
-    <article className="max-h-screen w-screen overflow-hidden">
+    <article className="max-h-screen w-screen">
       {fetchStatus === 'rejected' ? (
         <div className="absolute w-full text-center mx-auto mt-6 rounded-lg text-red-400 text-sm  p-2">
           Please enter a valid city
@@ -63,7 +63,7 @@ function App() {
       </form>
 
       {forecast.location ? (
-        <div className="mx-auto flex flex-col bg-white w-96 h-screen px-10 py-12">
+        <div className="mx-auto flex flex-col bg-white w-96 max-h-full px-10 py-12">
           <h2 className="text-center text-4xl text-blueGray-600">
             {forecast.location.split(',')[0]}
           </h2>
