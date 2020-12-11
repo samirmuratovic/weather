@@ -37,4 +37,4 @@ const getForecast = async (city) => {
   return forecast
 }
 
-module.exports = getForecast
+export default getForecast
