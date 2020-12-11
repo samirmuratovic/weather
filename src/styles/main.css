@@ -811,6 +811,10 @@ select {
   color: rgba(115, 115, 115, var(--tw-text-opacity));
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .w-5 {
   width: 1.25rem;
 }

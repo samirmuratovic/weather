@@ -3,15 +3,12 @@ import Icon from './Icon'
 import getForecast from './utils/forecast'
 
 function App() {
-  const [forecast, setForecast] = useState(() => ({
-    current: {},
-    location: '',
-  }))
+  const [forecast, setForecast] = useState(() => ({}))
 
   useEffect(() => {
     async function fetchForecast() {
-      const { current, location } = await getForecast('Orlando')
-      setForecast({ current, location })
+      const data = await getForecast('Orlando')
+      setForecast(data)
       setFetchStatus('resolved')
     }
     fetchForecast()
@@ -25,12 +22,11 @@ function App() {
 
     if (!city) return
 
-    const { status, current, location } = await getForecast(city)
+    const data = await getForecast(city)
+    setFetchStatus(data.status)
 
-    setFetchStatus(status)
-
-    if (status === 'resolved') {
-      setForecast({ current, location })
+    if (data.status === 'resolved') {
+      setForecast(data)
       setCity('')
     }
   }
@@ -65,13 +61,13 @@ function App() {
       {forecast.location ? (
         <div className="mx-auto flex flex-col bg-white w-96 max-h-full px-10 py-12">
           <h2 className="text-center text-4xl text-blueGray-600">
-            {forecast.location.split(',')[0]}
+            {forecast.location}
           </h2>
-          <span className="mt-6 text-center text-trueGray-400">
-            {forecast.current.weather_descriptions[0]}
+          <span className="mt-6 text-center text-trueGray-400 capitalize">
+            {forecast.description}
           </span>
           <div className="flex items-center align-center my-8 mx-auto w-44 h-44">
-            <Icon conditions={forecast.current.weather_descriptions[0]} />
+            <Icon conditions={forecast.description} />
           </div>
           <div className="mt-5 ml-3 mr-3 flex justify-between items-center">
             <div className="flex flex-col items-center">
@@ -90,11 +86,11 @@ function App() {
                 </g>
               </svg>
               <span className="mt-3 text-blueGray-400">
-                {forecast.current.precip} %
+                {forecast.clouds} %
               </span>
             </div>
             <h1 className="ml-10 text-6xl text-blueGray-600">
-              {forecast.current.temperature}°
+              {forecast.temp}°
             </h1>
             <div className="flex flex-col items-center">
               <svg className="w-7 h-5">
@@ -129,7 +125,7 @@ function App() {
                 </g>
               </svg>
               <span className="mt-3 text-blueGray-400">
-                {forecast.current.wind_speed} mi / h
+                {forecast.speed} mi / h
               </span>
             </div>
           </div>
@@ -137,9 +133,9 @@ function App() {
             <div className="flex flex-col items-center">
               <div className="pill flex items-center justify-center w-20 h-6 bg-blue-50 rounded-full">
                 <span className="text-xs font-semibold text-blue-300">
-                  {forecast.current.humidity < 30
+                  {forecast.humidity < 30
                     ? 'Low'
-                    : forecast.current.humidity < 60
+                    : forecast.humidity < 60
                     ? 'Moderate'
                     : 'High'}
                 </span>
@@ -151,29 +147,29 @@ function App() {
             <div className="flex flex-col items-center">
               <div className="pill flex items-center justify-center w-20 h-6 bg-trueGray-100 rounded-full">
                 <span className="text-xs font-semibold text-trueGray-400">
-                  {forecast.current.uv_index < 4
+                  {forecast.visibility < 3500
                     ? 'Low'
-                    : forecast.current.uv_index < 8
+                    : forecast.visibility < 7000
                     ? 'Moderate'
                     : 'High'}
                 </span>
               </div>
               <span className="mt-4 text-xs font-semibold text-blueGray-500">
-                UV
+                Visibility
               </span>
             </div>
             <div className="flex flex-col items-center">
               <div className="pill flex items-center justify-center w-20 h-6 bg-yellow-100 rounded-full">
                 <span className="text-xs font-semibold text-yellow-400">
-                  {forecast.current.cloudcover > 70
-                    ? 'Low'
-                    : forecast.current.cloudcover > 40
+                  {forecast.pressure > 1000
+                    ? 'High'
+                    : forecast.pressure > 980
                     ? 'Moderate'
-                    : 'High'}
+                    : 'Low'}
                 </span>
               </div>
               <span className="mt-4 text-xs font-semibold text-blueGray-500">
-                Pollen
+                Pressure
               </span>
             </div>
           </div>

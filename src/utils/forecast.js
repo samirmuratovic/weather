@@ -4,26 +4,32 @@ const getForecast = async (city) => {
   let status = 'pending'
   let forecast = {}
 
-  const geocodeURL = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
-    city
-  )}.json?access_token=${process.env.REACT_APP_GEOCODE_KEY}&limit=1`
-
   try {
     let res
-    res = await axios(geocodeURL)
 
-    const latitude = res.data.features[0].center[1]
-    const longitude = res.data.features[0].center[0]
-    const location = res.data.features[0].place_name
-
-    const forecastURL = `http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_FORECAST_KEY}&query=${latitude},${longitude}&units=f`
+    const forecastURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_FORECAST_KEY}&units=imperial`
 
     res = await axios(forecastURL)
     status = 'resolved'
 
+    const {
+      name: location,
+      visibility,
+      main: { humidity, temp, pressure },
+      weather: [{ description }],
+      wind: { speed },
+      clouds,
+    } = res.data
+
     forecast = {
-      ...res.data,
+      clouds: clouds.all,
       location,
+      humidity,
+      temp: Math.floor(temp),
+      pressure,
+      visibility,
+      speed: Math.floor(speed),
+      description,
       status,
     }
   } catch (e) {
