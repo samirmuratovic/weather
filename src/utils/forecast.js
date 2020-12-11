@@ -39,7 +39,6 @@ const getForecast = async (city) => {
       status,
     }
   }
-
   return forecast
 }
 
