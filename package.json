@@ -21,7 +21,8 @@
     "eject": "react-scripts eject",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
     "server": "nodemon src/server.js",
-    "dev": "concurrently \"npm run server\" \"npm run start\""
+    "client": "npm run watch:css && react-scripts start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "proxy": "http://localhost:3000",
   "eslintConfig": {
