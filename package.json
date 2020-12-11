@@ -24,7 +24,7 @@
     "client": "npm run watch:css && react-scripts start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": [
       "react-app",
