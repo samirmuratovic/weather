@@ -6,7 +6,7 @@ const getForecast = async (city) => {
 
   const geocodeURL = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
     city
-  )}.json?access_token=${'pk.eyJ1Ijoic2FtaXJtdXJhdG92aWMiLCJhIjoiY2s5Mzd4NzMyMDB3NzNybXA3ZDY5NzdlbCJ9.LpHj-Rh9VZXksrcyPBSsXA'}&limit=1`
+  )}.json?access_token=${process.env.REACT_APP_GEOCODE_KEY}&limit=1`
 
   try {
     let res
@@ -16,7 +16,7 @@ const getForecast = async (city) => {
     const longitude = res.data.features[0].center[0]
     const location = res.data.features[0].place_name
 
-    const forecastURL = `http://api.weatherstack.com/current?access_key=${'5836e2c01908a5bc8ce1b2c9b026a14b'}&query=${latitude},${longitude}&units=f`
+    const forecastURL = `http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_FORECAST_KEY}&query=${latitude},${longitude}&units=f`
 
     res = await axios(forecastURL)
     status = 'resolved'

@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -19,10 +18,7 @@
     "build": "npm run watch:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
-    "server": "nodemon src/server.js",
-    "client": "npm run watch:css && react-scripts start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
   },
   "proxy": "http://localhost:8080",
   "eslintConfig": {
@@ -46,8 +42,6 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^10.0.4",
-    "concurrently": "^5.3.0",
-    "nodemon": "^2.0.6",
     "postcss": "^8.1.14",
     "postcss-cli": "^8.3.0",
     "tailwindcss": "^2.0.1"

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Icon from './Icon'
-import axios from 'axios'
+import getForecast from './utils/forecast'
 
 function App() {
   const [forecast, setForecast] = useState(() => ({
@@ -10,9 +10,7 @@ function App() {
 
   useEffect(() => {
     async function fetchForecast() {
-      const {
-        data: { current, location },
-      } = await axios('/forecast?city=San+Francisco')
+      const { current, location } = await getForecast('Orlando')
       setForecast({ current, location })
       setFetchStatus('resolved')
     }
@@ -27,9 +25,7 @@ function App() {
 
     if (!city) return
 
-    const {
-      data: { status, current, location },
-    } = await axios(`/forecast?city=${city}`)
+    const { status, current, location } = await getForecast(city)
 
     setFetchStatus(status)
 
